@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Mastery - Complete Demonstration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- TYPOGRAPHY SECTION -->
+        <section class="typography-demo">
+            <h1>CSS Mastery: Complete Demonstration</h1>
+            <h2>Typography & Text Effects</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+
+        <!-- SELECTORS SECTION -->
+        <section class="selector-demo">
+            <h2>CSS Selectors</h2>
+            <article>
+                <h3>Article (Element Selector)</h3>
+                <p>This article is styled using an element selector.</p>
+            </article>
+            
+            <div class="highlight-box">
+                <h3>Highlight Box (Class Selector)</h3>
+                <p>This box uses a class selector with a yellow background.</p>
+            </div>
+            
+            <div id="special-content">
+                <h3>Special Content (ID Selector)</h3>
+                <p>This content is styled with an ID selector.</p>
+            </div>
+            
+            <div>
+                <h3>Attribute Selector</h3>
+                <a href="#" target="_blank">This link opens in a new tab (styled red)</a>
+            </div>
+            
+            <div>
+                <h3>Pseudo-classes</h3>
+                <button class="interactive-btn">Hover over me!</button>
+            </div>
+            
+            <div>
+                <h3>Pseudo-elements</h3>
+                <p class="quote">This quote has before and after pseudo-elements</p>
+            </div>
+        </section>
+
+        <!-- FLEXBOX SECTION -->
+        <section class="flexbox-demo">
+            <h2>Flexbox Layout</h2>
+            
+            <div class="flex-nav">
+                <div class="logo">Flexbox Nav</div>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="flex-container">
+                <div class="flex-item">
+                    
+                    <h3>Responsive</h3>
+                    <p>Flexbox makes responsive design easy</p>
+                </div>
+                <div class="flex-item">
+                    <h3>Fast</h3>
+                    <p>Efficient layout with minimal code</p>
+                </div>
+                <div class="flex-item">
+                    <h3>Flexible</h3>
+                    <p>Items can grow, shrink, and wrap</p>
+                </div>
+                <div class="flex-item">
+                    <h3>Alignment</h3>
+                    <p>Perfect control over alignment</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- GRID SECTION -->
+        <section class="grid-demo">
+            <h2>CSS Grid Layout</h2>
+            
+            <div class="grid-container">
+                <div class="grid-card">
+                    <img src="ram.png" alt="Card image" height="200" width="300">
+                    <div class="card-content">
+                        <h3>Card Title 1</h3>
+                        <p>This is a card created with CSS Grid, demonstrating auto-fit and minmax functions.</p>
+                    </div>
+                </div>
+                <div class="grid-card">
+                    <img src="ram.png" alt="Card image" height="200" width="300">
+                    <div class="card-content">
+                        <h3>Card Title 2</h3>
+                        <p>Cards automatically adjust to fill available space with responsive grid.</p>
+                    </div>
+                </div>
+                <div class="grid-card">
+                    <img src="ram.png" alt="Card image" height="200" width="300">
+                    <div class="card-content">
+                        <h3>Card Title 3</h3>
+                        <p>Perfect for image galleries, product listings, or blog posts.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Complex Grid with Template Areas</h3>
+            <div class="complex-grid">
+                <div class="grid-header">Header</div>
+                <div class="grid-sidebar">Sidebar</div>
+                <div class="grid-main">Main Content</div>
+                <div class="grid-footer">Footer</div>
+            </div>
+        </section>
+
+        <!-- BOX MODEL SECTION -->
+        <section class="box-model-demo">
+            <h2>CSS Box Model</h2>
+            <div class="box-model">
+                <p>Content</p>
+            </div>
+            <p style="text-align: center; margin-top: 50px;">The box above shows margin (outer space), border (dashed line), padding (inner space), and content (center)</p>
+        </section>
+
+        <!-- RESPONSIVE SECTION -->
+        <section class="responsive-demo">
+            <h2>Responsive Design with Media Queries</h2>
+            <p>Resize your browser window to see the grid change from 4 columns → 3 → 2 → 1 column</p>
+            
+            <div class="responsive-grid">
+                <div class="responsive-item">Item 1</div>
+                <div class="responsive-item">Item 2</div>
+                <div class="responsive-item">Item 3</div>
+                <div class="responsive-item">Item 4</div>
+                <div class="responsive-item">Item 5</div>
+                <div class="responsive-item">Item 6</div>
+                <div class="responsive-item">Item 7</div>
+                <div class="responsive-item">Item 8</div>
+            </div>
+        </section>
+
+        <!-- ANIMATION SECTION -->
+        <section class="animation-demo">
+            <h2>CSS Animations</h2>
+            <div class="animated-box"></div>
+            <div class="animated-box"></div>
+            <div class="animated-box"></div>
+            <div class="spinner" style="margin: 20px;"></div>
+            <p>The boxes slide in on load and pulse on hover. The spinner rotates continuously.</p>
+        </section>
+
+        <!-- VARIABLES SECTION -->
+        <section class="variables-demo">
+            <h2>CSS Variables (Custom Properties)</h2>
+            <div class="var-box">Primary</div>
+            <div class="var-box secondary">Secondary</div>
+            <div class="var-box danger">Danger</div>
+            <p>Colors are defined once as CSS variables and reused throughout</p>
+        </section>
+    </div>
+</body>
+</html>
