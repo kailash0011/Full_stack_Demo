@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML5 Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #f4f4f4;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .tag {
+            background: #eee;
+            padding: 2px 5px;
+            font-family: monospace;
+            color: blue;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        th {
+            background: #667eea;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>HTML5 Semantic Elements</h1>
+            <nav>
+                <h3>Navigation <span class="tag">&lt;nav&gt;</span></h3>
+                <ul>
+                    <li><a href="#forms">Forms</a></li>
+                    <li><a href="#tables">Tables</a></li>
+                    <li><a href="#media">Media</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Forms Section -->
+            <section id="forms">
+                <h2>1. Forms <span class="tag">&lt;form&gt;</span></h2>
+                <form>
+                    <fieldset>
+                        <legend>Your Info:</legend>
+                        <p><label>Name: <input type="text" placeholder="Ram Bahadur"></label></p>
+                        <p><label>Email: <input type="email" placeholder="ram@email.com"></label></p>
+                        <p><label>Age: <input type="number" min="28"></label></p>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Preferences:</legend>
+                        <p>
+                            <input type="radio" name="exp" id="beginner">
+                            <label for="beginner">Beginner</label>
+                            
+                            <input type="radio" name="exp" id="pro">
+                            <label for="pro">Pro</label>
+                        </p>
+                        <p>
+                            <label>Language:
+                                <select>
+                                    <optgroup label="Frontend">
+                                        <option>HTML</option>
+                                        <option>CSS</option>
+                                    </optgroup>
+                                    <optgroup label="Backend">
+                                        <option>PHP</option>
+                                        <option>JavaScript</option>
+                                    </optgroup>
+                                </select>
+                            </label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="subscribe" checked>
+                            <label for="subscribe">Subscribe to newsletter</label>
+                        </p>
+                    </fieldset>
+                    
+                    <p><label>Message: <br><textarea rows="4" cols="40" placeholder="Type here..."></textarea></label></p>
+                    
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </form>
+            </section>
+
+            <!-- Tables Section -->
+            <section id="tables">
+                <h2>2. Tables <span class="tag">&lt;table&gt;</span></h2>
+                <table>
+                    <caption>Student Grades</caption>
+                    <thead>
+                        <tr>
+                            <th>Student</th>
+                            <th>Assignment 1</th>
+                            <th>Assignment 2</th>
+                            <th>Average</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Balen</td>
+                            <td>85%</td>
+                            <td>92%</td>
+                            <td>88%</td>
+                        </tr>
+                        <tr>
+                            <td>Gagan</td>
+                            <td>94%</td>
+                            <td>88%</td>
+                            <td>91%</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Class Average:</td>
+                            <td>89.5%</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+
+            <!-- Media Section -->
+            <section id="media">
+                <h2>3. Media Elements</h2>
+                
+                <h3>Audio:</h3>
+                <audio controls>
+                    <source src="national_anthem.mp3" type="audio/mpeg">
+                   
+                </audio>
+                
+                <h3>Video:</h3>
+                <video width="400" controls>
+                    <source src="village.mp4" type="video/mp4">
+                    Browser doesn't support video
+                </video>
+                
+                <h3>Progress:</h3>
+                <progress value="70" max="100">70%</progress>
+                
+                <h3>Meter:</h3>
+                <meter value="0.6">60%</meter>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <h3>Footer <span class="tag">&lt;footer&gt;</span></h3>
+            <address>
+                Contact: <a href="mailto:student@school.com">student@school.com</a>
+            </address>
+            <p>&copy; 2026 | Last updated: <time datetime="2026-03-14">March 14</time></p>
+        </footer>
+    </div>
+</body>
+</html>
+
