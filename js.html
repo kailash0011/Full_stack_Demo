@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Demo</title>
+    <link rel="stylesheet" href="style_js.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1> JavaScript Demo</h1>
+            <p>Learn JavaScript Basics</p>
+        </div>
+
+        <div class="section">
+            <h2> 1. Variables</h2>
+            <div class="demo-box">
+                <h3>Variable Types</h3>
+                <button onclick="showVariables()">Show Variables</button>
+                <div id="variables-output" class="output">Click button to see output...</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2> 2. Functions</h2>
+            <div class="demo-box">
+                <h3>Function Examples</h3>
+                <button onclick="showFunctions()">Show Functions</button>
+                <div id="functions-output" class="output">Click button to see output...</div>
+            </div>
+        </div>
+
+
+        <div class="section">
+            <h2> 3. DOM Manipulation</h2>
+            <div class="demo-box">
+                <h3>Add/Remove Elements</h3>
+                <button onclick="addItem()">Add Item</button>
+                <button onclick="removeItem()">Remove Item</button>
+                <button onclick="clearItems()">Clear All</button>
+                <div id="item-list" class="item-container">
+                    <p>No items yet...</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section">
+            <h2> 4. Events</h2>
+            <div class="demo-box">
+                <h3>Click Event</h3>
+                <button onclick="handleButtonClick()">Click Me</button>
+                <p id="click-message"></p>
+            </div>
+            
+            <div class="demo-box">
+                <h3>Input Event</h3>
+                <input type="text" id="text-input" placeholder="Type something...">
+                <p>You typed: <span id="text-display"></span></p>
+            </div>
+        </div>
+
+  
+        <div class="section">
+            <h2> 5. Arrays</h2>
+            <div class="demo-box">
+                <h3>Array Methods</h3>
+                <button onclick="showArrays()">Show Arrays</button>
+                <div id="array-output" class="output">Click button to see output...</div>
+            </div>
+        </div>
+
+
+        <div class="section">
+            <h2> 6. Async JavaScript</h2>
+            <div class="demo-box">
+                <h3>Fetch User Data</h3>
+                <button onclick="getUser()">Get Random User</button>
+                <div id="user-output" class="output">Click button to fetch user...</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
